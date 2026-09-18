@@ -22,8 +22,13 @@ Key facts:
 - [About](https://www.kreativesolution.in/#about): Background on founder Padma Sawant and her credentials.
 - [Portfolio](https://www.kreativesolution.in/#portfolio): Featured residential and commercial projects in Goa.
 - [Process](https://www.kreativesolution.in/#process): The studio's step-by-step design and execution process.
+- [Articles](https://www.kreativesolution.in/articles/): Guides on architecture, interior design and building regulations in Goa.
 - [FAQ](https://www.kreativesolution.in/#faq): Answers to common questions about cost, timelines and services.
 - [Contact](https://www.kreativesolution.in/#contact): Consultation booking, phone, email and WhatsApp contact.
+
+## Articles
+
+- [Build a House in Goa: 2026 Legal Checklist for Plot Owners](https://www.kreativesolution.in/articles/build-a-house-in-goa-legal-checklist.html): A step-by-step guide to the legal approvals a plot owner needs before and after building in Goa — title verification, TCP zoning, coastal/slope/tree restrictions, Conversion Sanad, TCP technical clearance, the Panchayat/Municipal construction licence, and the completion and occupancy certificates. Published 2026-09-18.
 
 ## Notes
 
