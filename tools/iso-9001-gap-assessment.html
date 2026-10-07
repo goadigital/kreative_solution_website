@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>ISO 9001:2026 Gap Assessment Checklist for Manufacturing</title>
+  <meta name="description" content="Free ISO 9001:2026 gap assessment tool for manufacturing organizations. Clause-by-clause audit questions, notes and compliance status, with new 2026 requirements highlighted." />
+  <meta name="author" content="Kreative Solution" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.kreativesolution.in/tools/iso-9001-gap-assessment.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kreative Solution" />
+  <meta property="og:url" content="https://www.kreativesolution.in/tools/iso-9001-gap-assessment.html" />
+  <meta property="og:title" content="ISO 9001:2026 Gap Assessment Checklist for Manufacturing" />
+  <meta property="og:description" content="Clause-by-clause ISO 9001:2026 gap assessment with new requirements versus ISO 9001:2015 highlighted." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231a1a2e'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='serif' fill='%23c9a84c'>K</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/articles.css" />
+  <link rel="stylesheet" href="/css/gap-assessment.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Kreative Solution — Home">
+        <span class="logo-name">Kreative Solution</span>
+        <span class="logo-tagline">Architecture &amp; Interiors · Goa</span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="/#services">Services</a>
+        <a href="/#about">About</a>
+        <a href="/#portfolio">Portfolio</a>
+        <a href="/#process">Process</a>
+        <a href="/articles/">Articles</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#contact">Contact Us</a>
+        <a href="/#contact" class="btn btn-primary nav-cta nav-cta-desktop">Get a Quote</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="/#services" class="mobile-link">Services</a>
+    <a href="/#about" class="mobile-link">About</a>
+    <a href="/#portfolio" class="mobile-link">Portfolio</a>
+    <a href="/#process" class="mobile-link">Process</a>
+    <a href="/articles/" class="mobile-link">Articles</a>
+    <a href="/#faq" class="mobile-link">FAQ</a>
+    <a href="/#contact" class="mobile-link">Contact Us</a>
+    <a href="/#contact" class="btn btn-primary">Get a Quote</a>
+  </div>
+
+  <!-- ===================== BREADCRUMB ===================== -->
+  <div class="container breadcrumb no-print" aria-label="Breadcrumb">
+    <a href="/">Home</a><span class="sep">/</span><span>Tools</span><span class="sep">/</span><span aria-current="page">ISO 9001:2026 Gap Assessment</span>
+  </div>
+
+  <main class="container ga">
+
+    <header class="ga-header">
+      <span class="article-tag no-print">Quality Management · Manufacturing</span>
+      <h1 class="ga-title">ISO 9001:2026 Gap Assessment</h1>
+      <p class="ga-lede no-print">
+        Clause-by-clause checklist for a manufacturing organization. Record notes and mark each requirement
+        Compliant, Non-compliant or Not applicable. Requirements that are <span class="badge badge-new">New</span>
+        or <span class="badge badge-mod">Modified</span> compared with ISO 9001:2015 are highlighted. Editorial changes are not flagged.
+        Your answers are saved in this browser automatically.
+      </p>
+    </header>
+
+    <!-- ===================== TOOLBAR ===================== -->
+    <div class="ga-toolbar no-print" role="toolbar" aria-label="Assessment actions">
+      <div class="ga-progress">
+        <div class="ga-progress-bar"><span id="progress-fill"></span></div>
+        <span id="progress-text">0 of 0 answered</span>
+        <span id="save-status" class="ga-save" aria-live="polite"></span>
+      </div>
+      <div class="ga-actions">
+        <label class="ga-filter">
+          <span class="sr-only">Show</span>
+          <select id="filter">
+            <option value="all">Show all requirements</option>
+            <option value="changes">Only 2026 changes</option>
+            <option value="nc">Only non-compliant</option>
+            <option value="open">Only not yet assessed</option>
+          </select>
+        </label>
+        <button type="button" class="ga-btn ga-btn-primary" id="btn-print">Print / Save PDF</button>
+        <button type="button" class="ga-btn" id="btn-export">Export file</button>
+        <button type="button" class="ga-btn" id="btn-import">Import file</button>
+        <button type="button" class="ga-btn ga-btn-danger" id="btn-new">New assessment</button>
+        <input type="file" id="import-file" accept="application/json,.json" hidden />
+      </div>
+    </div>
+
+    <!-- ===================== DETAILS ===================== -->
+    <section class="ga-card" aria-labelledby="details-heading">
+      <h2 id="details-heading" class="ga-h2">Assessment details</h2>
+      <form id="meta-form" class="ga-meta" autocomplete="off" onsubmit="return false;">
+        <label>Organization name<input type="text" name="orgName" required /></label>
+        <label>Site / address<input type="text" name="site" /></label>
+        <label class="span-2">Products / scope of the QMS<input type="text" name="scope" placeholder="e.g. Manufacture of machined and fabricated steel components" /></label>
+        <label>Auditor name<input type="text" name="auditor" required /></label>
+        <label>Auditee / management representative<input type="text" name="auditee" /></label>
+        <label>Assessment date<input type="date" name="date" /></label>
+        <label>Reference no.<input type="text" name="ref" /></label>
+        <label>Assessment type
+          <select name="type">
+            <option value=""></option>
+            <option>Transition gap assessment (2015 → 2026)</option>
+            <option>Initial gap assessment (pre-certification)</option>
+            <option>Internal audit</option>
+          </select>
+        </label>
+        <label>Number of employees<input type="text" name="employees" inputmode="numeric" /></label>
+      </form>
+    </section>
+
+    <!-- ===================== SUMMARY ===================== -->
+    <section class="ga-card" aria-labelledby="summary-heading">
+      <h2 id="summary-heading" class="ga-h2">Summary</h2>
+      <div class="ga-stats" id="stats"></div>
+      <table class="ga-clause-table" id="clause-summary">
+        <thead><tr><th>Clause</th><th>Compliant</th><th>Non-compliant</th><th>N/A</th><th>Not assessed</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- ===================== WHAT'S NEW ===================== -->
+    <section class="ga-card ga-changes" aria-labelledby="changes-heading">
+      <h2 id="changes-heading" class="ga-h2">What changed from ISO 9001:2015</h2>
+      <p class="ga-muted">Technical changes only. Select one to jump to its question.</p>
+      <ul id="changes-list"></ul>
+    </section>
+
+    <!-- ===================== CHECKLIST ===================== -->
+    <section aria-label="Checklist" id="checklist"></section>
+
+    <!-- ===================== GAPS ===================== -->
+    <section class="ga-card" aria-labelledby="gaps-heading" id="gaps-section">
+      <h2 id="gaps-heading" class="ga-h2">Gaps found (non-compliant)</h2>
+      <ol id="gaps-list" class="ga-gaps"></ol>
+      <p id="gaps-empty" class="ga-muted">No non-compliances recorded yet.</p>
+    </section>
+
+    <!-- Print-only sign-off -->
+    <section class="ga-signoff print-only">
+      <div><span>Auditor signature</span></div>
+      <div><span>Auditee signature</span></div>
+      <div><span>Date</span></div>
+    </section>
+
+    <p class="ga-disclaimer">
+      Questions are paraphrased to guide the assessment and do not reproduce the text of ISO 9001:2026.
+      Always refer to the official standard.
+    </p>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" role="contentinfo" class="no-print">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kreative Solution. All rights reserved. | Padma Sawant, Goa</p>
+        <p><a href="https://www.kreativesolution.in">www.kreativesolution.in</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script src="/js/main.js"></script>
+  <script src="/js/iso9001-clauses.js"></script>
+  <script src="/js/gap-assessment.js"></script>
+
+</body>
+</html>
